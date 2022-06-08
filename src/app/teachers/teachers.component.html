@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="form-teachers">
+      <div *ngFor="let teacher of teachers" class="list-teachers">
+        <img src="assets/icon.png">
+        
+        <p class="teacher-nome">{{teacher.nome}}</p><br>
+        <p class="teacher-curso">{{teacher.aulas}}</p><br>
+        
+        <a routerLink="/detail/{{teacher.id}}" class="button-edit">
+          <span class="badge"><img src="assets/edit.svg"></span>
+        </a>
+      </div>
+    </div>
+  </div>
+  

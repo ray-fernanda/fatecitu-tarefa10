@@ -9,11 +9,11 @@
   margin-top: 30px;        
 }
 
-.form-students {
+.form-teachers {
   margin: 0 auto;
 }
 
-.list-students {
+.list-teachers {
   margin: 0 auto;
   padding: 1em;
   background-color: #4A95D4;
@@ -28,14 +28,14 @@ img, p {
   display: inline-block;
 }
 
-.list-students img {
+.list-teachers img {
   width: 35px;
   height: 35px;
   float: left;
   margin-top: 4px;
 }
 
-.student-nome {
+.teacher-nome {
   font-size: 1em;
   font-weight: 600;
   margin-left: 10px;
@@ -43,7 +43,7 @@ img, p {
   margin-bottom: -20px;
 }
 
-.student-curso {
+.teacher-curso {
   margin-left: 10px;
   font-style: italic;
   margin-left: 10px;

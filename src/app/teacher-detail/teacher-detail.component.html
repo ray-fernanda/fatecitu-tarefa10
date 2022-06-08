@@ -1,0 +1,10 @@
+<div *ngIf="teacher">
+    <h2>{{teacher.nome | uppercase}} Details</h2>
+    <div><span>id: </span>{{teacher.id}}</div>
+    <div>
+      <label for="student-name">teacher name: </label>
+      <input id="teacher-name" [(ngModel)]="teacher.nome" placeholder="teacher name"/>
+    </div>
+    <button type="button" (click)="goBack()">Voltar</button>
+  </div>
+
