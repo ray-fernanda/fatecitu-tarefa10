@@ -1,10 +1,16 @@
-<div *ngIf="teacher">
-    <h2>{{teacher.nome | uppercase}} Details</h2>
-    <div><span>id: </span>{{teacher.id}}</div>
-    <div>
-      <label for="student-name">teacher name: </label>
-      <input id="teacher-name" [(ngModel)]="teacher.nome" placeholder="teacher name"/>
-    </div>
-    <button type="button" (click)="goBack()">Voltar</button>
+<div class="container">
+  <div *ngIf="teacher" class="title">
+    <h2>{{teacher.nome | uppercase}} - Detalhes</h2>
   </div>
+  
+  <div *ngIf="teacher" class="info-teachers">
+    <span>ID: </span>{{teacher.id}}<br>
+      <label for="teacher-name">Nome: </label>
+      <input id="teacher-name" [(ngModel)]="teacher.nome" placeholder="Nome"/><br>
+
+      <label for="teacher-name">Dia de Aulas: </label>
+      <input id="teacher-name" [(ngModel)]="teacher.aulas" placeholder="Dia de Aulas"/><br>
+      <button type="button" (click)="goBack()" class="button-details">Voltar</button>
+    </div>
+</div>
 

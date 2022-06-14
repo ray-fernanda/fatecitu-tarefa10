@@ -19,14 +19,15 @@ export class DashboardComponent implements OnInit {
     this.getStudents();
     this.getTeachers();
   }
-
+  
   getStudents(): void {
     this.studentService.getStudents()
       .subscribe(students => this.students = students.slice(1, 6));
   }
-
+  
   getTeachers(): void {
     this.teacherService.getTeachers()
       .subscribe(teachers => this.teachers = teachers.slice(1, 6));
   }
 }
+

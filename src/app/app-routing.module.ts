@@ -9,9 +9,9 @@ import { TeacherDetailComponent } from './teacher-detail/teacher-detail.componen
 const routes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
   { path: 'dashboard', component: DashboardComponent },
-  { path: 'detail/:id', component: StudentDetailComponent },
-  { path: 'students', component: StudentsComponent },
   { path: 'detail/:id', component: TeacherDetailComponent},
+  { path: 'student-detail/:id', component: StudentDetailComponent },
+  { path: 'students', component: StudentsComponent },
   { path: 'teachers', component: TeachersComponent  }
 ];
 

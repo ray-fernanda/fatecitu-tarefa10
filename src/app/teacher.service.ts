@@ -16,7 +16,7 @@ export class TeacherService {
   }
 
   getTeacher(id: number): Observable<Teacher> {
-    const teacher = TEACHERS.find(s => s.id ===id) !;
+    const teacher = TEACHERS.find(t => t.id === id) !;
     this.messageService.add('TeacherService: fetched teachers id=${id}');
     return of(teacher);
   }

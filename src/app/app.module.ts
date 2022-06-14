@@ -18,10 +18,10 @@ import { TeacherDetailComponent } from './teacher-detail/teacher-detail.componen
     AppComponent,
     StudentsComponent,
     StudentDetailComponent,
-    MessagesComponent,
-    DashboardComponent,
     TeachersComponent,
-    TeacherDetailComponent 
+    TeacherDetailComponent, 
+    MessagesComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
